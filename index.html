@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <meta name="viewport" content="widht=device-widht, initial-scale=1.0" />
+    <title>Penjualan Motor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="bike">
+      <nav>
+        <img src="image/logo.png" class="logo" />
+        <a href="#" class="btn">Rp. 1.000.000.000</a>
+      </nav>
+      <div class="content">
+        <h2>BMW</h2>
+        <h1>G 310 RR</h1>
+        <p>
+          Motor BMW adalah sepeda motor buatan BMW Motorrad, divisi sepeda motor
+          dari perusahaan otomotif Jerman, BMW. Motor BMW dikenal luas karena
+          desain premium, teknologi canggih, dan performa tinggi, serta
+          reputasinya dalam dunia tur, petualangan, dan motorsport.
+        </p>
+        <h3>Tentukan Pilihan Warna</h3>
+        <div class="colour-select">
+          <div id="red"></div>
+          <div id="blue"></div>
+          <div id="black"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let redBtn = document.getElementById("red");
+      let blueBtn = document.getElementById("blue");
+      let blackBtn = document.getElementById("black");
+      let bike = document.getElementById("bike");
+
+      redBtn.onclick = function () {
+        bike.style.backgroundImage = "url(image/BMW1.png)";
+      };
+      blueBtn.onclick = function () {
+        bike.style.backgroundImage = "url(image/BMW2.png)";
+      };
+      blackBtn.onclick = function () {
+        bike.style.backgroundImage = "url(image/BMW3.png)";
+      };
+    </script>
+  </body>
+</html>
